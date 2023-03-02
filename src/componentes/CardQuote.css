@@ -1,39 +1,70 @@
+:root {
+  margin: 0;
+  padding: 0;
+  font-family:'Sue Ellen Francisco', 'Courier New', Courier, monospace;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  
+}
 .card {
   text-align: center;
   background-color: rgb(30, 17, 52);
   box-shadow: 0 0 15px rgb(173, 230, 66);
   border-radius: 30px;
-  overflow: hidden;
   opacity: 0.8;
   line-height:110px;
   gap: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
-.autorName {
-  color: rgb(5, 5, 5);
-}
-h3{
+.autorName__str{
+  font-family: 'Sue Ellen Francisco', cursive;
+  font-size: 40px;
   margin: 0;
   padding: 0;
-  font-family: 'Sue Ellen Francisco', cursive;
 }
-p{
-  font-family: 'Sue Ellen Francisco', cursive;
-  font-size: 20px;
+.quotePharse{
+  
+  font-size: 45px;
   font-weight: 400;
   line-height: 50px;
   padding: 0 10px 0 10px;
 }
 button {
-  font-weight: 400;
-  width: 70px;
-  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-decoration: #030101;
+  letter-spacing: 5px;
+  font-size: 20px;
+  width: 100px;
+  height: 50px;
   border-radius: 8px;
   border: 1px solid transparent;
   background-color: #030101;
   cursor: pointer;
-  transition: border-color 0.65s;
-  margin-bottom: 10px;
+  transition: border-color 0.6s;
+  margin-bottom: 30px;
 }
 button:hover {
   border-color: #646cff;
+}
+.tittle_quotes{
+  font-size: 40px;
+  line-height: 10px;
+  color: #2b2160;
+  margin-top: 40px;
+  font-family: 'Sue Ellen Francisco', cursive;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.autorName{
+font-size: 30px;
+color: rgb(2, 2, 2);
 }

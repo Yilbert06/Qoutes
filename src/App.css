@@ -1,40 +1,94 @@
 .App {
   height: 100%;
   width: 100%;
-  display: flex;
-  justify-items: center;
-  align-content: center;
-  flex-direction: column;
+  text-align: center;
   position: relative;
-  gap: 30px;
   overflow: hidden;
 }
 img {
   position: relative;
   height: 100%;
-  width: 100% ;
+  width: 100%;
 }
-.autorName {
-  font-size: 20px;
-  color: rgb(5, 5, 5);
-}
-
 .backgroundImg {
   position: absolute;
+  height: 100%;
+  width: 100%;
 }
 .text {
-  width: 800px;
-  height: 650px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 30px;
-  margin-left: 350px;
-  position: relative;
+  max-height: 650px;
+  margin: 150px;
 }
-.autorName__str {
-  font-size: 25px;
+@media (max-width: 800px) {
+  .card {
+    line-height: 60px;
+    gap: 10px;
+  }
+  .text {
+    margin: 100px;
+  }
+  .tittle_quotes {
+    font-size: 30px;
+    margin-top: 30px;
+    line-height: 17px;
+  }
 }
-.autorName__str:hover {
-  border-color: #646cff;
+@media (max-width: 500px) {
+  .card {
+    line-height: 20px;
+  }
+  .text {
+    margin: 60px;
+  }
+  .autorName__str {
+    font-size: 20px;
+  }
+  .quotePharse {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  button {
+    letter-spacing: 2px;
+    font-size: 12px;
+    width: 60px;
+    height: 45px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  .tittle_quotes {
+    font-size: 25px;
+    line-height: 5px;
+    margin-top: 10px;
+  }
+  .autorName {
+    font-size: 20px;
+  }
+}
+@media (max-width: 390px) {
+  .text {
+    width: 90%;
+    max-height: 70%;
+    margin: 20px;
+  }
+  .autorName__str {
+    font-family: "Sue Ellen Francisco", cursive;
+    font-size: 10px;
+  }
+  .quotePharse {
+    font-size: 15px;
+    line-height: 15px;
+  }
+  button {
+    font-size: 20px;
+    width: 100px;
+    height: 50px;
+    margin-bottom: 20px;
+  }
+  .tittle_quotes {
+    font-size: 20px;
+    line-height: 0px;
+  }
+  .autorName {
+    font-size: 18px;
+  }
 }
